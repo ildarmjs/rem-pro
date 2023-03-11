@@ -1,0 +1,53 @@
+@use 'sass:math';
+@import 'mixins.scss';
+// Подключение переменных
+@import 'vars.scss';
+
+// Обнуление =============
+@import 'reset.scss';
+// Базовые стили
+@import 'base.scss';
+// Общие стили
+@import 'ui.scss';
+// =======================
+// Шапка
+@import 'header.scss';
+
+// Intro
+@import 'intro.scss';
+// Advantages
+@import 'advantages.scss';
+
+// Works
+@import 'works.scss';
+
+// About
+@import 'about.scss';
+
+// Services
+@import 'services.scss';
+
+// Form
+@import 'form.scss';
+
+// Footer
+@import 'footer.scss';
+
+button {
+	background-color: transparent;
+}
+body {
+	color: #000;
+	background: #fff;
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	&._lock {
+		overflow: hidden;
+	}
+}
+
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
